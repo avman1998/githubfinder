@@ -1,10 +1,12 @@
-import GithubFinder from "./GithubFInder";
+import Header from "./Header";
+import { Outlet } from "react-router-dom";
 import "./App.css";
 
 function App() {
   return (
-    <div className="flex justify-center items-center">
-      <GithubFinder />
+    <div className="">
+      <Header />
+      <Outlet />
     </div>
   );
 }

@@ -52,6 +52,7 @@ const GithubFinder = () => {
         <button onClick={handleFind}>Find User</button>
         <button onClick={() => setInputValue("")}>❌</button>
       </div>
+
       {users?.length === 0 ? (
         <Loader />
       ) : (
@@ -62,7 +63,7 @@ const GithubFinder = () => {
                 key={item.id}
                 img={item.avatar_url}
                 username={item.login}
-                userprofile={item.html_url}
+                id={item.id}
               />
             );
           })}
