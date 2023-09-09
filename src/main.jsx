@@ -1,9 +1,9 @@
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
+import Summary from "./Summary.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import GithubFinder from "./GithubFInder.jsx";
-import Summary from "./Summary.jsx";
 const appRouter = createBrowserRouter([
   {
     path: "/",
@@ -23,7 +23,7 @@ const appRouter = createBrowserRouter([
         element: <h1>Contact</h1>,
       },
       {
-        path: "/user/:id",
+        path: "/user/:username",
         element: <Summary />,
       },
     ],

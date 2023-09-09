@@ -1,7 +1,6 @@
 const Loader = () => {
   const arr = new Array(30);
-  arr.fill("A");
-  console.log(arr);
+  arr.fill("");
 
   return (
     <div className="flex gap-[20px] justify-between flex-wrap ">

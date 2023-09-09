@@ -63,7 +63,6 @@ const GithubFinder = () => {
                 key={item.id}
                 img={item.avatar_url}
                 username={item.login}
-                id={item.id}
               />
             );
           })}
